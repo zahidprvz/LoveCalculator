@@ -81,7 +81,6 @@ button#calculate:active {
 }
 
 /* Media queries for responsiveness */
-
 @media (max-width: 768px) {
   /* Adjustments for tablets and smaller screens */
   #content-box {
@@ -164,4 +163,13 @@ button#calculate:active {
     font-size: 30px;
     margin-top: 10px;
   }
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+  margin-top: 20px;
 }
