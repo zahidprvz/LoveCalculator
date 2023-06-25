@@ -3,12 +3,12 @@ body {
     text-align: center;
     background-image: url("./heart-image.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-color: #f7f7f7; /* Fallback color in case image fails to load */
   }
   
   #content-box {
-    width: 500px;
+    width: 400px;
     height: auto;
     background-color: #ffffff;
     padding: 20px;
