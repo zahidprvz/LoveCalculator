@@ -6,8 +6,11 @@ window.onload = function() {
   document.getElementById('calculate').addEventListener('click', function(event) {
     event.preventDefault();
 
-    var yourName = document.getElementById('your-name').value;
-    var crushName = document.getElementById('crush-name').value;
+    var yourNameInput = document.getElementById('your-name');
+    var crushNameInput = document.getElementById('crush-name');
+
+    var yourName = yourNameInput.value;
+    var crushName = crushNameInput.value;
 
     if (yourName !== "" && crushName !== "") {
       var percentage = Math.floor(Math.random() * 101); // Generates a random number between 0 and 100
@@ -30,6 +33,10 @@ window.onload = function() {
           document.getElementById('result-message').innerText = 'Failed to send email.';
           document.getElementById('result-percentage').innerText = '';
         });
+
+      // Clear the input values after calculating
+      yourNameInput.value = '';
+      crushNameInput.value = '';
     } else {
       // Display an error message if either name is not entered
       document.getElementById('result-message').innerText = 'Please enter both names.';
