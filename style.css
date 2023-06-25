@@ -7,6 +7,15 @@ body {
   background-color: #f7f7f7; /* Fallback color in case image fails to load */
 }
 
+footer {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+  margin-top: 20px;
+}
+
 #content-box {
   width: 90%;
   max-width: 500px;
@@ -165,11 +174,4 @@ button#calculate:active {
   }
 }
 
-footer {
-  background-color: #f7f7f7;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  color: #555555;
-  margin-top: 20px;
-}
+
