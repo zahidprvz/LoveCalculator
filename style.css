@@ -1,82 +1,167 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-image: url("./heart-image.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    background-color: #f7f7f7; /* Fallback color in case image fails to load */
-  }
-  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url("./heart-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7; /* Fallback color in case image fails to load */
+}
+
+#content-box {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 30px;
+  color: #ff5e6c;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+button#calculate {
+  width: 150px;
+  height: 50px;
+  background-color: #ff5e6c;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button#calculate:hover {
+  background-color: #ff3e4f;
+}
+
+button#calculate:active {
+  background-color: #ff1f32;
+}
+
+#result-message {
+  font-size: 24px;
+  margin-top: 30px;
+  color: black; /* Change the color to black */
+}
+
+#result-percentage {
+  font-size: 50px;
+  color: #ff5e6c;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  /* Adjustments for tablets and smaller screens */
   #content-box {
-    width: 400px;
-    height: auto;
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 90%;
   }
-  
+
   h1 {
-    font-size: 30px;
-    color: #ff5e6c;
-  }
-  
-  p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555555;
-  }
-  
-  label {
-    display: block;
-    font-size: 16px;
-    color: #555555;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    outline: none;
-  }
-  
-  button#calculate {
-    width: 150px;
-    height: 50px;
-    background-color: #ff5e6c;
-    color: #ffffff;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button#calculate:hover {
-    background-color: #ff3e4f;
-  }
-  
-  button#calculate:active {
-    background-color: #ff1f32;
-  }
-  
-  #result-message {
     font-size: 24px;
-    margin-top: 30px;
-    color: black; /* Change the color to black */
   }
-  
+
+  p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  button#calculate {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  #result-message {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
   #result-percentage {
-    font-size: 50px;
-    color: #ff5e6c;
+    font-size: 40px;
     margin-top: 10px;
   }
-  
-  
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  #content-box {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input[type="text"] {
+    height: 25px;
+    font-size: 12px;
+  }
+
+  button#calculate {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #result-message {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  #result-percentage {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
